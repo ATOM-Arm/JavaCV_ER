@@ -29,7 +29,7 @@ public class HaarCascadeHandTrackerWebcam {
         Scanner kIn = new Scanner(System.in);
 
         // Carrega classificador Haar (vem com o OpenCV)
-        CascadeClassifier handTracker = new CascadeClassifier(projectPath + "resources/"+ "fist.xml");
+        CascadeClassifier handTracker = new CascadeClassifier(projectPath + "resources/"+ "hand.xml");
 
         VideoCapture capture = new VideoCapture(0);
         if (!capture.isOpened()) {
